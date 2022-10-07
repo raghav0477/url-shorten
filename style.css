@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --light: #ffffff;
+  --gray: hsl(0, 0%, 84%);
+  --gray-voilet: hsl(260, 4%, 48%);
+  --dark-blue: hsl(255, 9%, 34%);
+}
+.nav-menu {
+  padding: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  color: var(--gray-voilet);
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+button {
+  padding: 10px 20px;
+  background-color: var(--cyan);
+  color: var(--light);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+}
+
+.login {
+  text-decoration: none;
+  color: var(--gray-voilet);
+  margin-right: 20px;
+}
+
+.tools img {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hero-right h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+.hero-right p {
+  font-size: 27px;
+  width: 46rem;
+  color: var(--gray-voilet);
+  margin-bottom: 2rem;
+}
+.input-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--dark-violet);
+  background-image: url("/images/bg-shorten-desktop.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 50rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.link-btn {
+  border-radius: 5px;
+  margin-left: 2rem;
+  padding: 12px;
+}
+.stats{
+  background-color: var(--gray);
+  /* display: block; */
+}
+.stats-head{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.sub-head{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray-voilet);
+}
+.card{
+  width: 30rem;
+  background-color: var(--light);
+  padding: 2rem;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 700;
+}
