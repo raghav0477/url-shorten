@@ -15,10 +15,11 @@ async function shortenUrl(url) {
   try {
     const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
     const data = await res.json();
-    console.log(data.result.short_link);
+    // console.log(data.result.short_link);
     const html =` <div>${data.result.short_link}</div>`
-    result.insertAdjacentHTML('afterbegin', html);
-    
+    items.insertAdjacentHTML('afterbegin', html);
+    const newUrl = document.createElement("div")
+    newUrl.classList.add("item");
     
     // const newUrl = document.createElement("div");
     // newUrl.classList.add("item");
@@ -35,4 +36,13 @@ async function shortenUrl(url) {
   } catch (err) {
     console.log(err);
   }
+}
+function myfunction() {
+  var copyText = document.getElementById("result"); 
+  console.log(copyText); 
+  // console.log('first')
+  // copyText.select();
+  // copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+  // alert("Copied the text: " + copyText.value);
 }

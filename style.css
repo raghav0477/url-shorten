@@ -161,7 +161,7 @@ input {
 .cls-2 {
   transform: translateY(50%);
 }
-.get-started {
+.boost {
   height: 10rem;
   padding: 2rem;
   background-color: var(--dark-violet);
@@ -236,7 +236,6 @@ input {
 .newUrl-btn {
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
-  color: rgb(175, 21, 21);
   font-size: 1rem;
   text-align: center;
   background: var(--cyan);
@@ -277,7 +276,7 @@ input {
     margin: 1rem 0;
     width: 80vw;
   }
-  button{
+  button {
     display: flex;
     margin: 0 auto;
   }
@@ -297,27 +296,68 @@ input {
     align-items: center;
     height: 60rem;
   }
-  .cards-gp{
+  .cards-gp {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2.5rem;
     gap: 50px;
   }
-  .card{
+  .card {
     width: 18rem;
     padding: 1.5rem;
   }
-  .cls-1{
+  .cls-1 {
     transform: none;
   }
-  .stats-head{
+  .card-img{
+    width: 3rem;
+    height: 3rem;
+    top: -1.5rem;
+  }
+  .card-img img{
+    width: 2rem;
+    transform: translate(22%, 22%);
+  }
+  .stats-head {
     padding-top: 0.5rem;
+    font-size: 20px;
   }
-  .cls-2{
+  .cls-2 {
     transform: none;
   }
-  footer {
-    display: none;
+  .boost {
+    margin-bottom: 2rem;
+  }
+  .gs-btn {
+    margin: 10px auto;
+  }
+  .newUrl-btn{
+    padding: 1rem;
+  }
+  .footer-container{
+    width: 80vw;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left:0;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  .list-head{
+    font-weight: 700;
+  }
+  .social-links{
+    margin: 2rem auto;
   }
 }
