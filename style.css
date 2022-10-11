@@ -110,7 +110,7 @@ input {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   font-weight: 700;
 }
 .sub-head {
@@ -163,7 +163,7 @@ input {
 }
 .boost {
   height: 10rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--dark-violet);
   background-image: url("/images/bg-shorten-desktop.svg");
   background-position: right;
@@ -172,6 +172,9 @@ input {
 .gs-btn {
   display: flex;
   margin: 0 auto;
+}
+.list-head{
+  font-weight: 700;
 }
 .footer {
   background-color: var(--darker);
@@ -222,7 +225,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 2rem;
 }
 .result .items {
@@ -231,7 +234,9 @@ input {
   align-items: center;
   flex-direction: column;
   background-color: #eaeaea;
-  border: 2px solid rebeccapurple;
+  padding: 0.5rem;
+  border-radius: 5px;
+  /* border: 2px solid rebeccapurple; */
 }
 .newUrl-btn {
   padding: 0.5rem 1rem;
@@ -354,9 +359,7 @@ input {
   .logo{
     margin: 0 auto;
   }
-  .list-head{
-    font-weight: 700;
-  }
+  
   .social-links{
     margin: 2rem auto;
   }

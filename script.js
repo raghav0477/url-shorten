@@ -15,7 +15,6 @@ async function shortenUrl(url) {
   try {
     const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
     const data = await res.json();
-    // console.log(data.result.short_link);
     const html =` <div>${data.result.short_link}</div>`
     items.insertAdjacentHTML('afterbegin', html);
     const newUrl = document.createElement("div")
