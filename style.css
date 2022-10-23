@@ -223,18 +223,20 @@ input {
 }
 .result {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 2rem;
 }
 .result .items {
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  background-color: #eaeaea;
+  justify-content: space-evenly;
+  width: 60vw;
   gap: 1rem;
-  padding: 0.5rem;
+  background-color: #eaeaea;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
   border-radius: 5px;
 }
 .newUrl-btn {
@@ -250,6 +252,10 @@ input {
 .myclass {
   color: red;
   background-color: lime;
+}
+.shorten-url {
+  color: var(--cyan);
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 576px) {
@@ -341,7 +347,20 @@ input {
     margin: 10px auto;
   }
   .newUrl-btn {
-    padding: 1rem;
+    width: 78vw;
+    justify-content: center;
+  }
+  .result .items {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 85vw;
+  }
+  .shorten-url {
+    font-size: 18px;
+    font-weight: 500;
   }
   .footer-container {
     width: 80vw;
