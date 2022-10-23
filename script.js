@@ -16,17 +16,14 @@ async function shortenUrl(url) {
     const data = await res.json();
     const item = document.createElement("div");
     item.classList.add("items");
-    result.appendChild(item)
-
+    result.appendChild(item);
+    // document.getElementById()
+    // item.appendChild(subitem);
     const html = `<div class="main-url">${url}</div> <div class = "shorten-url">${data.result.short_link}</div>`;
     item.insertAdjacentHTML("afterbegin", html);
     // result.appendChild(html);
     const newUrl = document.createElement("div");
     newUrl.classList.add("item");
-
-    // const few = `<div>${url}</div>`
-    // result.insertAdjacentElement("beforebegin",few);
-    // result.appendChild(few);
 
     const butn = document.createElement("button")
     butn.innerHTML = "Copy It!";
@@ -41,12 +38,6 @@ async function shortenUrl(url) {
   } catch (err) {
     console.log(err);
   }
-}
-function myfunction() {
-  var copyText = document.getElementById("result");
-  console.log(copyText);
-  navigator.clipboard.writeText(copyText.value);
-  // alert("Copied the text: " + copyText.value);
 }
 
 

@@ -230,7 +230,7 @@ input {
 }
 .result .items {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   width: 60vw;
   gap: 1rem;
   background-color: #eaeaea;
@@ -238,6 +238,12 @@ input {
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 5px;
+
+}
+.main-url{
+  overflow: hidden;
+  margin-right: 10rem;
+
 }
 .newUrl-btn {
   padding: 0.5rem 1rem;
