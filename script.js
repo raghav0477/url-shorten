@@ -32,8 +32,6 @@ async function shortenUrl(url) {
     });
     butn.classList.add('newUrl-btn');
     item.appendChild(butn);
-
-
     input.value = "";
   } catch (err) {
     console.log(err);
