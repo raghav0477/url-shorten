@@ -18,9 +18,12 @@ Your users should be able to:
 
 ### Screenshot
 The screenshot for the solution...
-![](./screenshot.jpg)
+![](./images/solution.png)
 ### Links
-Links of the hosted webpage
+Links of the hosted webpage:
+https://grand-cheesecake-dc8baf.netlify.app/
+GitHub Link:
+https://github.com/raghav0477/url-shorten
 
 ### Built with
 
@@ -28,5 +31,7 @@ Links of the hosted webpage
 - CSS custom properties
 - Flexbox
 ## Author
+Raghav Sharma
+
 
 **It was fun** 🚀
