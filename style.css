@@ -41,7 +41,6 @@
 button {
   padding: 10px 20px;
   background-color: var(--cyan);
-  color: var(--light);
   font-size: 18px;
   font-weight: 500;
   border: none;
@@ -76,6 +75,10 @@ button {
   color: var(--gray-voilet);
   margin-bottom: 2rem;
 }
+.hero-left img {
+  pointer-events: none;
+  user-select: none;
+}
 .input-bar {
   display: flex;
   align-items: center;
@@ -101,6 +104,10 @@ input {
   border-radius: 5px;
   margin-left: 2rem;
   padding: 12px;
+}
+.btn-link{
+  color: var(--light);
+  text-decoration: none;
 }
 .stats {
   background-color: var(--gray);
@@ -238,12 +245,10 @@ input {
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 5px;
-
 }
-.main-url{
+.main-url {
   overflow: hidden;
   margin-right: 10rem;
-
 }
 .newUrl-btn {
   padding: 0.5rem 1rem;
@@ -269,7 +274,7 @@ input {
     display: flex;
     flex-direction: column-reverse;
   }
-  .hero-right{
+  .hero-right {
     display: flex;
     flex-direction: column;
     align-items: center;
