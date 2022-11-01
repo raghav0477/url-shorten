@@ -27,6 +27,7 @@
 .left {
   display: flex;
   align-items: center;
+  padding-left: 2rem;
 }
 .menu {
   position: relative;
@@ -64,13 +65,15 @@ button {
   align-items: center;
   margin-top: 2rem;
 }
-
+.hero-right{
+  padding-left: 4rem;
+}
 .hero-right h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
 }
 .hero-right p {
-  font-size: 27px;
+  font-size: 1.6rem;
   width: 46rem;
   color: var(--gray-voilet);
   margin-bottom: 2rem;
@@ -95,15 +98,11 @@ button {
 input {
   padding: 15px;
   border: none;
+  margin-right: 1rem;
   border-radius: 5px;
   width: 50rem;
   font-size: 1rem;
   font-weight: 500;
-}
-.link-btn {
-  border-radius: 5px;
-  margin-left: 2rem;
-  padding: 12px;
 }
 .btn-link{
   color: var(--light);
@@ -247,12 +246,15 @@ input {
   border-radius: 5px;
 }
 .main-url {
+  text-overflow: clip;
+  /* margin-right: 5rem; */
   overflow: hidden;
-  margin-right: 10rem;
+  white-space: nowrap;
 }
 .newUrl-btn {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 0.2rem;
+  width: 15rem;
   font-size: 1rem;
   text-align: center;
   background: var(--cyan);
@@ -298,10 +300,6 @@ input {
     width: 80vw;
     text-align: center;
     margin-bottom: 1rem;
-  }
-  .link-btn {
-    margin: 1rem 0;
-    width: 80vw;
   }
   button {
     display: flex;
@@ -362,6 +360,7 @@ input {
   .newUrl-btn {
     width: 78vw;
     justify-content: center;
+    margin-top: 1rem;
   }
   .result .items {
     display: flex;
@@ -372,8 +371,9 @@ input {
     width: 85vw;
   }
   .shorten-url {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
+    margin: 0 auto;
   }
   .footer-container {
     width: 80vw;
@@ -426,10 +426,6 @@ input {
     width: 80vw;
     text-align: center;
     margin-bottom: 1rem;
-  }
-  .link-btn {
-    margin: 1rem 0;
-    width: 80vw;
   }
   button {
     display: flex;

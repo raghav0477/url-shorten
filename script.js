@@ -27,8 +27,10 @@ async function shortenUrl(url) {
 
     const butn = document.createElement("button")
     butn.innerHTML = "Copy It!";
+    // butn.onclick.innerHTML = "Copied that shit!!!";
     butn.addEventListener ("click", function() {
       navigator.clipboard.writeText(butn.previousElementSibling.textContent);
+      this.innerHTML("Cp");
     });
     butn.classList.add('newUrl-btn');
     item.appendChild(butn);
@@ -37,6 +39,4 @@ async function shortenUrl(url) {
     console.log(err);
   }
 }
-
-
 
