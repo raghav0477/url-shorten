@@ -17,17 +17,13 @@ async function shortenUrl(url) {
     const item = document.createElement("div");
     item.classList.add("items");
     result.appendChild(item);
-    // document.getElementById()
-    // item.appendChild(subitem);
     const html = `<div class="main-url">${url}</div> <div class = "shorten-url">${data.result.short_link}</div>`;
     item.insertAdjacentHTML("afterbegin", html);
-    // result.appendChild(html);
     const newUrl = document.createElement("div");
     newUrl.classList.add("item");
 
     const butn = document.createElement("button")
     butn.innerHTML = "Copy It!";
-    // butn.onclick.innerHTML = "Copied that shit!!!";
     butn.addEventListener ("click", function() {
       navigator.clipboard.writeText(butn.previousElementSibling.textContent);
       butn.textContent = 'URL Copied!!';
