@@ -65,9 +65,7 @@ button {
   align-items: center;
   margin-top: 2rem;
 }
-.hero-right{
-  padding-left: 4rem;
-}
+
 .hero-right h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -358,7 +356,7 @@ input {
     margin: 10px auto;
   }
   .newUrl-btn {
-    width: 78vw;
+    width: 70vw;
     justify-content: center;
     margin-top: 1rem;
   }
@@ -440,6 +438,7 @@ input {
   }
   input {
     width: 80vw;
+    margin-right: 0;
   }
   .stats {
     display: flex;
@@ -484,7 +483,8 @@ input {
     margin: 10px auto;
   }
   .newUrl-btn {
-    width: 78vw;
+    width: 70vw;
+    margin-top: 1rem;
     justify-content: center;
   }
   .result .items {
