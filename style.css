@@ -236,7 +236,7 @@ input {
 }
 .result .items {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   width: 60vw;
   gap: 1rem;
   background-color: #eaeaea;

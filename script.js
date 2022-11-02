@@ -30,7 +30,9 @@ async function shortenUrl(url) {
     // butn.onclick.innerHTML = "Copied that shit!!!";
     butn.addEventListener ("click", function() {
       navigator.clipboard.writeText(butn.previousElementSibling.textContent);
-      this.innerHTML("Cp");
+      butn.textContent = 'Copied!!';
+      butn.style.background = "#5A5A66";
+      butn.style.color = "white";
     });
     butn.classList.add('newUrl-btn');
     item.appendChild(butn);
