@@ -134,7 +134,7 @@ input {
 .card {
   width: 25rem;
   background-color: var(--light);
-  padding: 3.5rem;
+  padding: 2.5rem;
   position: relative;
 }
 .card-title {
