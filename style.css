@@ -14,7 +14,7 @@
   --dark-violet: hsl(257, 27%, 26%);
   --light: #ffffff;
   --gray: #f0f1f6;
-  --gray-voilet: hsl(260, 4%, 48%);
+  --gray-voilet: #9e9aa7;
   --dark-blue: hsl(255, 9%, 34%);
   --darker: hsl(260, 8%, 14%);
 }
@@ -90,9 +90,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54%;
+  width: 60%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3.2rem;
   border-radius: 8px;
   background-color: var(--dark-violet);
   background-image: url("/images/bg-shorten-desktop.svg");
@@ -104,7 +104,7 @@ input {
   border: none;
   margin-right: 1rem;
   border-radius: 5px;
-  width: 50rem;
+  width: 45rem;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -116,6 +116,7 @@ input {
   background-color: var(--gray);
   height: 40rem;
 }
+
 .stats-head {
   display: flex;
   justify-content: center;
@@ -132,6 +133,8 @@ input {
 }
 .sub-head {
   display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
   justify-content: center;
   text-align: center;
   font-size: 18px;
@@ -141,23 +144,37 @@ input {
 .cards-gp {
   display: flex;
   margin-top: 5rem;
+  position: relative;
   gap: 16px;
   justify-content: center;
 }
+.cards-gp::after{
+  content: "";
+  display: block;
+  color: #2acfcf;
+  position: absolute;
+  width: 67.8125rem;
+  height: 0.5rem;
+  bottom: 10.8rem;
+  z-index: 3;
+}
 .card {
-  width: 25rem;
+  width: 22rem;
+  border-radius: 10px;
   background-color: var(--light);
-  padding: 2.5rem;
+  padding: 4rem 2rem 2rem 2rem;
   position: relative;
 }
 .card-title {
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 .card-content {
-  font-size: 16px;
+  font-size: 0.96rem;
   font-weight: 500;
-  text-align: justify ;
+  line-height: 1.6rem;
+  text-align: left ;
   color: var(--gray-voilet);
 }
 .card-img {
@@ -182,18 +199,22 @@ input {
 }
 .boost {
   height: 10rem;
-  padding: 1rem;
+  color: var(--light);
   background-color: var(--dark-violet);
-  background-image: url("/images/bg-shorten-desktop.svg");
-  background-position: right;
+  background-image: url("/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3.4rem 1.5rem 12rem;
 }
 .gs-btn {
   display: flex;
-  margin: 0 auto;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
 }
-.list-head {
+.list-head a  {
   font-weight: 700;
+  color: var(--light) !important;
 }
 .footer {
   background-color: var(--darker);
@@ -222,12 +243,12 @@ input {
   display: block;
 }
 .footer-links ul li {
-  margin-bottom: 16px;
+  margin-bottom: 0.6rem;
 }
 .footer-links ul li a {
-  color: var(--white);
+  color: var(--gray-voilet);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 26px;
 }
 .social-links {
@@ -260,15 +281,16 @@ input {
 }
 .main-url {
   text-overflow: clip;
-  /* margin-right: 5rem; */
   overflow: hidden;
   white-space: nowrap;
 }
 .newUrl-btn {
-  padding: 1rem;
-  border-radius: 0.2rem;
-  width: 15rem;
-  font-size: 1rem;
+  padding: 1.125rem 2.5625rem;
+  border-radius: 0.5rem;
+  max-width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--light);
   text-align: center;
   background: var(--cyan);
   cursor: pointer;
@@ -282,6 +304,9 @@ input {
 .shorten-url {
   color: var(--cyan);
   font-weight: 500;
+}
+.attribution{
+  text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
@@ -586,7 +611,5 @@ input {
   .social-links {
     margin: 1rem auto;
   }
-  .attribution{
-    text-align: center;
-  }
+  
 }
